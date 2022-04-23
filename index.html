@@ -12,12 +12,17 @@
       <div class="flex-container menu">
         <div><h1 class="title">JOGOS TEMÁTICOS</h1></div>
         <ul class="list-itens">
-          <li><a href="#dino-game"></a>Dino</li>
-          <li><a href="#sonic-game"></a>Sonic</li>
-          <li><a href="#mario-game"></a>Mario</li>
+          <li><a onclick="dinoImagem () " href="#dino-game">Dino Game</a></li>
+          <li><a onclick="sonicImagem ()" href="#sonic-game">Sonic</a></li>
+          <li><a href="#mario-game">Mario (Coming soon</a>)</li>
         </ul>
       </div>
     </header>
+
+    <section class="flex-container" id="gameOver">
+      <h1>Fim de Jogo!!!</h1>
+      <button class="btn" onclick="recomecarjogo()">Recomeçar?</button>
+    </section>
 
     <section class="flex-container" id="game">
       <div class="background">

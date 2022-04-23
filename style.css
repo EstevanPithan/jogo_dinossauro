@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -68,39 +69,46 @@ header {
 
 .fundo {
   position: absolute;
-  background-image: url(/assets/images/background.png);
   background-repeat: repeat-x;
-  animation: slideright 1250s infinite linear;
-  width: 1050px;
+  animation: slideright 2000s infinite linear;
+  width: 1500px;
   height: 200px;
-  bottom: -10px;
-  left: -500px;
+  bottom: -20px;
+  left: -750px;
   object-fit: fill;
+  background-image: url(/assets/images/background-dino.png);
 }
 
 .personagem {
   position: absolute;
   width: 60px;
   height: 60px;
-  bottom: 0px;
-  background-image: url(/assets/images/dino.png);
+  bottom: -10px;
+  background-image: url(/assets/images/dino-correndo.gif);
 }
 
-.obstacle {
+.obstaculo-dino {
   position: absolute;
   width: 60px;
   height: 60px;
-  bottom: -2px;
-  background-image: url(/assets/images/cactus.png);
+  bottom: -12px;
+  background-image: url(/assets/images/obstaculo-dino.png);
 }
 
-.game-over {
-  display: flex;
+.obstaculo-sonic {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -12px;
+  background-image: url(/assets/images/obstaculo-sonic.png);
+}
+
+#gameOver {
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
 .btn {
   margin: 30px;
   width: auto;
@@ -109,7 +117,6 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
-
 @keyframes slideright {
   from {
     background-position: 70000%;
@@ -119,12 +126,10 @@ header {
   }
 }
 
-/* FOOTER */
 footer {
   background-color: black;
   color: white;
 }
-
 .footer {
   align-items: center;
   justify-content: space-between;
